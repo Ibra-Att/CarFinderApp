@@ -1,0 +1,49 @@
+[
+  {
+    "ContainingType": "CarFinderAPP_API.Controllers.VehiclesController",
+    "Method": "GetAllMakes",
+    "RelativePath": "api/Vehicles/makes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarFinderAPP_API.Controllers.VehiclesController",
+    "Method": "GetModels",
+    "RelativePath": "api/Vehicles/makes/{makeId}/models",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "makeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarFinderAPP_API.Controllers.VehiclesController",
+    "Method": "GetVehicleTypes",
+    "RelativePath": "api/Vehicles/makes/{makeId}/vehicle-types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "makeId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
