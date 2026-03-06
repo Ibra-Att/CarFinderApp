@@ -19,8 +19,17 @@ builder.Services.AddHttpClient("NhtsaClient", client =>
 builder.Services.AddScoped<INhtsaService, NhtsaService>();
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular", policy =>
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyMethod()
+              .AllowAnyHeader());
+});
+
 var app = builder.Build();
 
+app.UseCors("AllowAngular");
 app.UseSwagger();
 app.UseSwaggerUI();
 
