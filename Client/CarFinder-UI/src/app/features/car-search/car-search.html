@@ -1,1 +1,69 @@
-<p>car-search works!</p>
+<div class="container">
+  <h2>Car Finder</h2>
+  <p class="subtitle">Search for vehicle types and models by make and year</p>
+
+  <div class="filters">
+    <mat-form-field appearance="outline">
+      <mat-label>Car Make (search by make id or name)</mat-label>
+      <input type="text"
+             matInput
+             [formControl]="makeSearchControl"
+             [matAutocomplete]="auto"
+             placeholder="Type to search makes...">
+      <mat-autocomplete #auto="matAutocomplete"
+                        [displayWith]="displayMake"
+                        (optionSelected)="onMakeSelected($event.option.value)">
+        @for (make of filteredMakes(); track make.makeId) {
+          <mat-option [value]="make">id : {{make.makeId}} - name : {{ make.makeName }}</mat-option>
+        }
+      </mat-autocomplete>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Manufacture Year</mat-label>
+      <mat-select (selectionChange)="onYearSelected($event.value)">
+        @for (year of years; track year) {
+          <mat-option [value]="year">{{ year }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  @if (selectedMake()) {
+    <div class="section">
+      <h3>Vehicle Types for {{ selectedMake()!.makeName }}</h3>
+      @if (vehicleTypes().length > 0) {
+        <div class="types-grid">
+          @for (type of vehicleTypes(); track type.vehicleTypeId) {
+            <mat-card appearance="outlined">
+              <mat-card-content>
+                <span class="type-name">{{ type.vehicleTypeName }}</span>
+              </mat-card-content>
+            </mat-card>
+          }
+        </div>
+      } @else {
+        <p class="empty">No vehicle types found.</p>
+      }
+    </div>
+  }
+
+  @if (selectedMake() && selectedYear()) {
+    <div class="section">
+      <h3>Models for {{ selectedMake()!.makeName }} ({{ selectedYear() }})</h3>
+      @if (models().length > 0) {
+        <div class="models-grid">
+          @for (model of models(); track model.modelId) {
+            <mat-card appearance="outlined">
+              <mat-card-content>
+                <span class="model-name">{{ model.modelName }}</span>
+              </mat-card-content>
+            </mat-card>
+          }
+        </div>
+      } @else {
+        <p class="empty">No models found for the selected criteria.</p>
+      }
+    </div>
+  }
+</div>

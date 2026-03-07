@@ -8,6 +8,8 @@ C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\bin\Debug\net10.
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\bin\Debug\net10.0\CarFinderAPP-API.pdb
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\CarFinderAPP-API.csproj.AssemblyReference.cache
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\rpswa.dswa.cache.json
@@ -27,12 +29,9 @@ C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\staticwebassets.development.json
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\swae.build.ex.cache
-C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\CarFinde.916BB06A.Up2Date
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\CarFinderAPP-API.dll
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\refint\CarFinderAPP-API.dll
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\CarFinderAPP-API.pdb
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\CarFinderAPP-API.genruntimeconfig.cache
 C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\obj\Debug\net10.0\ref\CarFinderAPP-API.dll
-C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Personal work\CarFinderApp\CarFinderApp\API\CarFinderAPP-API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
