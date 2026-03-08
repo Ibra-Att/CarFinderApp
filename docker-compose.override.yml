@@ -3,9 +3,8 @@ services:
     build:
       context: ./API/CarFinderAPP-API
       dockerfile: Dockerfile
-    restart: always
     ports:
-      - "5000:8080"
+      - "5230:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:8080
@@ -14,8 +13,7 @@ services:
     build:
       context: ./Client/CarFinder-UI
       dockerfile: Dockerfile
-    restart: always
     ports:
-      - "80:80"
+      - "4200:80"
     depends_on:
       - api

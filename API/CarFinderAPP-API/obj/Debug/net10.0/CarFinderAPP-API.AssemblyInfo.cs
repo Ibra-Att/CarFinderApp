@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarFinderAPP-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+371e6295d136f1846964b040f10fbef31f9e6b67")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dfbad60748725b8cf9b6dc03fe9e35aa3067e1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarFinderAPP-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarFinderAPP-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

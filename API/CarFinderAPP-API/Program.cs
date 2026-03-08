@@ -22,7 +22,7 @@ builder.Services.AddScoped<INhtsaService, NhtsaService>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular", policy =>
-        policy.WithOrigins("http://localhost:4200")
+        policy.WithOrigins("http://localhost:4200","http://16.171.148.200")
               .AllowAnyMethod()
               .AllowAnyHeader());
 });

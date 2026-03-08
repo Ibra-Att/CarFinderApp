@@ -61,6 +61,8 @@ docker-compose up --build (for first time)
 docker-compose up -d (any time after build)
 ```
 
+this will trigger docker-compose.override.yml auto since docker-compose.yml for server not local
+
 The application will be available at:
 - **Frontend**: http://localhost:4200
 - **API**: http://localhost:5230
@@ -81,3 +83,12 @@ docker-compose down
 | `GET /api/vehicles/makes/{makeId}/models?year={year}` | Get models for a make and year |
 
 
+## Live Demo
+
+- **Frontend**: http://16.171.148.200
+- **API Swagger**: http://16.171.148.200:5000/swagger/index.html
+
+## AWS Deployment
+
+The application is hosted on AWS EC2 (t3.micro, Ubuntu 24.04).
+Deployed using Docker Compose.
